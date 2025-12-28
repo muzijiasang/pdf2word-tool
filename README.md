@@ -1,29 +1,31 @@
-# pdf2word-tool
-Python PDF to Word converter
-PDF转Word工具
+# PDF转Word工具
 一个基于Python实现的高质量PDF转Word工具，支持保留PDF中的文字、图片、数学公式及原始排版，操作简单，新手可快速上手。
-📋 项目介绍
+
+
+# 📋 项目介绍
 •核心功能：将PDF文件转换为可编辑的Word（.docx）文件
 •转换优势：保留原始排版、文字格式、图片及大部分数学公式
 •适用场景：学习资料转换、工作文档编辑、论文格式调整等
 •依赖库：pdf2docx（核心转换库）、python-docx（Word文件处理）
-🔧 环境搭建
+
+
+# 🔧 环境搭建
 本项目支持Windows/Mac/Linux系统，需先安装Python环境，再配置依赖库。
-步骤1：安装Python（必做）
+# 步骤1：安装Python（必做）
 1.下载Python安装包：访问Python官网，下载对应系统的3.8+版本（推荐3.10）
 2.安装注意：
         
 ￮Windows：勾选「Add Python to PATH」（自动添加环境变量），其他默认下一步
 ￮Mac/Linux：可通过官网安装包或终端命令 brew install python3（需先安装Homebrew）
 3.验证安装：打开终端/命令提示符，输入 python --version 或 python3 --version，显示版本号即安装成功
-步骤2：安装依赖库（必做）
+# 步骤2：安装依赖库（必做）
 打开终端/命令提示符，直接复制以下命令执行，自动安装所有依赖：
 bash
 pip install pdf2word python-docx
 如果安装失败，尝试用以下命令（针对Python3）：
 bash
 pip3 install pdf2word python-docx
-步骤3：下载项目代码
+# 步骤3：下载项目代码
 4.访问本项目GitHub地址：https://github.com/muzijiasang/pdf2word-tool.git
 5.点击右上角「Code」→ 选择「Download ZIP」，下载后解压到任意文件夹（如：D:\pdf2word-tool）
 🚀 使用步骤
@@ -56,7 +58,7 @@ python pdf2word.py -i "D:/test.pdf" -o "D:/输出结果/转换后的文档.docx"
 参数说明：
 •-i：必选参数，指定需要转换的PDF文件绝对路径
 •-o：可选参数，指定转换后的Word文件保存路径，不指定则默认与PDF同目录
-📌 常见问题解决
+# 📌 常见问题解决
 问题1：运行后提示「错误：找不到文件 xxx.pdf」
 •原因：PDF路径填写错误，或文件不在指定路径下
 •解决：
@@ -78,18 +80,18 @@ python pdf2word.py -i "D:/test.pdf" -o "D:/输出结果/转换后的文档.docx"
 git config --global http.sslVerify false
 git config --global http.proxy https://ghproxy.com:443
 git config --global https.proxy https://ghproxy.com:443
-✨ 功能特性
+# ✨ 功能特性
 •✅ 保留文字：完美还原PDF中的文字内容、字体、字号
 •✅ 保留图片：自动提取PDF中的图片，插入到Word对应位置
 •✅ 保留公式：支持简单数学公式还原，复杂公式可微调
 •✅ 排版不失真：还原PDF的段落、行距、页边距等排版格式
 •✅ 操作简单：新手可通过修改路径直接使用，无需复杂配置
-📝 注意事项
+# 📝 注意事项
 •建议转换单个PDF文件大小不超过100MB，超大文件可分章节转换
 •加密的PDF文件需先解密（输入密码打开后保存为普通PDF），否则无法转换
 •转换后的Word文件建议用Office 2016+或WPS打开，避免低版本兼容问题
 •项目中的venv 文件夹是本地虚拟环境，无需下载和使用
-🤝 贡献与反馈
+# 🤝 贡献与反馈
 如果使用过程中遇到问题，或有功能优化建议，欢迎在GitHub仓库提交Issues，也可以直接Fork项目进行修改，提交Pull Request～
-📌 项目地址
+# 📌 项目地址
 GitHub：https://github.com/muzijiasang/pdf2word-tool.git
